@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Smythe', cursive;
+  min-height: 100vh;
+  line-height: 1.6; 
+  color: #000;
+  font-size: 2.3rem;
+}
+
+/* .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5;
+} */
+
+.item-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15;
+}
+
+.item-emoji {
+  font-size: 4rem;
+}
+
+.item-description {
+  display: flex;
+  font-size: 1.3rem;
+}
+
+.btn {
+  padding: .4em 1em;
+  border: none;
+  font-family: inherit;
+  border-radius: 25px;
+  margin: 0 .4em;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn-increment:focus,
+.btn-increment:hover {
+  background-color: rgb(13, 72, 13);
+  color: whitesmoke;
+}
+
+.btn-decrement:focus,
+.btn-decrement:hover {
+  background-color: rgb(236, 4, 4);
+  color: whitesmoke;
+}
+
+.btn-increment:focus,
+.btn-increment:hover,
+.btn-decrement:focus,
+.btn-decrement:hover,
+.btn-checkout:focus,
+.btn-checkout:hover {
+  transform: translateY(2px); /* Move the button downward by 3 pixels */
+  transition: transform 0.2s ease-in-out; /* Add a transition effect */
+}
+
+.btn-checkout {
+  padding: 1em 2em;
+  background-color: mediumslateblue;
+  font-size: 1.3rem;
+  color: rgb(189, 241, 255);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bolder;
+}
+
+span,
+.item-quantity {
+  font-size: 1.4rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
